@@ -16,9 +16,26 @@ function loadPreviewImage(input, preview, position) {
 
       // Adiciona o endereço da imagem no objeto imageUrls
       imageUrls[`image${position}`] = thisReader.result;
-
+      
       // Salva o objeto imageUrls no localStorage
       localStorage.setItem('imageUrls', JSON.stringify(imageUrls));
+
+      const savedImageUrls = JSON.parse(localStorage.getItem('imageUrls'));
+
+  // Cria uma variável para armazenar o conteúdo a ser exibido
+  let content = '';
+
+  // Adiciona cada propriedade e seu valor à variável de conteúdo
+  for (const key in savedImageUrls) {
+    content += `${key}: ${savedImageUrls[key]}<br>`;
+  }
+
+  // Adiciona o conteúdo ao <p> tag
+  const p = document.getElementById('exibeJson');
+  p.innerHTML = content;
+
+      
+      
     });
   });
 }
@@ -27,7 +44,33 @@ for (let i = 1; i <= 9; i++) {
   const input = document.getElementById(`inputPicture0${i}`);
   const preview = document.getElementById(`span0${i}`);
   loadPreviewImage(input, preview, i);
+  
+  
 }
+
+// // Seleciona o botão
+// const buttonJson = document.getElementById('buttonJson');
+
+// // Adiciona um evento de clique ao botão
+// buttonJson.addEventListener('click', () => {
+//   // Recupera o objeto do local storage
+//   const savedImageUrls = JSON.parse(localStorage.getItem('imageUrls'));
+
+//   // Cria uma variável para armazenar o conteúdo a ser exibido
+//   let content = '';
+
+//   // Adiciona cada propriedade e seu valor à variável de conteúdo
+//   for (const key in savedImageUrls) {
+//     content += `${key}: ${savedImageUrls[key]}<br>`;
+//   }
+
+//   // Adiciona o conteúdo ao <p> tag
+//   const p = document.getElementById('exibeJson');
+//   p.innerHTML = content;
+// });
+
+
+
 
 // const getPicture01 = document.getElementById('inputPicture01');
 // const img01 = document.getElementById('span01');
