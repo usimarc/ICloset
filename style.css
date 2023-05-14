@@ -1,0 +1,23 @@
+.tamanhoFoto {
+  width: 115px;
+}
+
+#camisas {
+  display: flex;
+  justify-content: space-around;
+}
+
+#calcas {
+  display: flex;
+  justify-content: space-around;
+}
+
+#sapatos {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type='file'] {
+  display: none;
+}
+
