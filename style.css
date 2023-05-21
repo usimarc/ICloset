@@ -11,6 +11,13 @@ body {
   font-size: 15px;
   
 }
+p {
+    word-wrap: break-word ;
+    max-width: 100ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .tamanhoFoto {
   width: 150px;
@@ -111,4 +118,8 @@ button:hover{
 
 #barraDireita {
   width: 20%;
+}
+
+#rodape {
+  width: 600px;
 }
