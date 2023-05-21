@@ -1,110 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Inserir fotos</title>
 </head>
+
 <body>
   <header>
-    <div>Bem vindo: Nome do usuário</div>
-    <br>
+    <div>
+      <p>Bem vindo</p>
+    </div>
   </header>
-
-  <section id="linhaCamisas">
-    <div id="camisas">
-      <div>
-          <label>
-            <p>Inserir imagem 01</p>
-            <span id="span01"></span>
-            <input type="file" id="inputPicture01">
-          </label>
-      </div>
+  <div id="divPai">
+    <div id="barraEsquerda">
       
-      <div>
-        <label>
-          <p>Inserir imagem 02</p>
-          <span id="span02"></span>
-          <input type="file" id="inputPicture02">
-        </label>
-      </div>
-
-      <div>
-        <label>
-          <p>Inserir imagem 03</p>
-          <span id="span03"></span>
-          <input type="file" id="inputPicture03">
-        </label>
-      </div>
     </div>
-  </section>
+    
+    <div id="barraCentro">
 
-  <section id="linhaCalcas">
-       
-    <div id="calcas">
-      
-      <div>
-        <label>
-          <p>Inserir imagem 04</p>
-          <span id="span04"></span>
-          <input type="file" id="inputPicture04">
-        </label>
-      </div>
-      
-      <div>
-        <label>
-          <p>Inserir imagem 05</p>
-          <span id="span05"></span>
-          <input type="file" id="inputPicture05">
-        </label>
+      <div id="linhaCamisas">
+        <div id="camisas">
+          <div>
+            <label>
+
+              <span id="span01"></span>
+              <input type="file" id="inputPicture01">
+              <img id="fotoAntes01" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+
+          </div>
+
+          <div>
+            <label>
+
+              <span id="span02"></span>
+              <input type="file" id="inputPicture02">
+              <img id="fotoAntes02" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+
+          <div>
+            <label>
+
+              <span id="span03"></span>
+              <input type="file" id="inputPicture03">
+              <img id="fotoAntes03" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <label>
-          <p>Inserir imagem 06</p>
-          <span id="span06"></span>
-          <input type="file" id="inputPicture06">
-        </label>
+      <div id="linhaCalcas">
+
+        <div id="calcas">
+
+          <div>
+            <label>
+
+              <span id="span04"></span>
+              <input type="file" id="inputPicture04">
+              <img id="fotoAntes04" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+
+          <div>
+            <label>
+
+              <span id="span05"></span>
+              <input type="file" id="inputPicture05">
+              <img id="fotoAntes05" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+
+          <div>
+            <label>
+
+              <span id="span06"></span>
+              <input type="file" id="inputPicture06">
+              <img id="fotoAntes06" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+        </div>
       </div>
+
+      <div id="linhaSapatos">
+
+        <div id="sapatos">
+
+          <div>
+            <label>
+
+              <span id="span07"></span>
+              <input type="file" id="inputPicture07">
+              <img id="fotoAntes07" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+
+
+          <div>
+            <label>
+
+              <span id="span08"></span>
+              <input type="file" id="inputPicture08">
+              <img id="fotoAntes08" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+
+          <div>
+            <label>
+
+              <span id="span09"></span>
+              <input type="file" id="inputPicture09">
+              <img id="fotoAntes09" src="./image/Upload4.jpeg" class="tamanhoFoto fotoAntes">
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="paiBotao">
+        <button type="button" id="buttonCombinar">Combinar</button>
+
+      </div>
+
+
+
     </div>
-  </section>
 
-  <section id="linhaSapatos">
-       
-    <div id="sapatos">
-      
-      <div>
-        <label>
-          <p>Inserir imagem 07</p>
-          <span id="span07"></span>
-          <input type="file" id="inputPicture07">
-        </label>
-      </div>
-      
-      
-      <div>
-        <label>
-          <p>Inserir imagem 08</p>
-          <span id="span08"></span>
-          <input type="file" id="inputPicture08">
-        </label>
-      </div>
 
-      <div>
-        <label>
-          <p>Inserir imagem 09</p>
-          <span id="span09"></span>
-          <input type="file" id="inputPicture09">
-        </label>
-      </div>
+    <div id="barraDireita">
+      
     </div>
-  </section>
 
-  <section>
-    <button type="button" id="buttonJson">Combinar</button>
-  </section>
+  </div>
+
+
 
   <section>
     <p>Observe aqui os dados que são enviados para o LocalSorage em um Json.</p>
@@ -112,8 +147,7 @@
     <p id="exibeJson">DadosJson</p>
   </section>
 
-
-
-<script type="text/javascript" src="telaFoto.js" ></script>  
+  <script type="text/javascript" src="telaFoto.js"></script>
 </body>
+
 </html>
