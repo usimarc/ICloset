@@ -1,4 +1,4 @@
-// Cria um objeto vazio  e para armazenar os endereços das imagens
+// Cria um objeto vazio para armazenar os endereços das imagens
 const imageUrls = {};
 
 function loadPreviewImage(input, preview, position) {
