@@ -31,6 +31,7 @@ function loadPreviewImage(input, preview, position) {
       localStorage.setItem('imageUrls', JSON.stringify(imageUrls));
 
       const savedImageUrls = JSON.parse(localStorage.getItem('imageUrls'));
+      console.log(savedImageUrls)
 
       // Cria uma variável para armazenar o conteúdo a ser exibido aqui quem fizer a próxima tela copia essas linhas e terá os arquivos para fazer as combinações
     let content = '';

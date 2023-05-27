@@ -46,6 +46,11 @@ p {
    
 }
 
+#check01 {
+  justify-content:right ;
+  align-items: right;
+}
+
 #barraCentro {
   align-items: center;
   justify-content: center;
