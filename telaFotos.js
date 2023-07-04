@@ -41,9 +41,9 @@ function loadPreviewImage(input, preview, position) {
     content += `${key}: ${savedImageUrls[key]}<br>`;
     }
 
-    // Adiciona o conteúdo ao <p> tag
-    const p = document.getElementById('exibeJson');
-    p.innerHTML = content;
+    // // Adiciona o conteúdo ao <p> tag
+    // const p = document.getElementById('exibeJson');
+    // p.innerHTML = content;
 
       
       
@@ -58,3 +58,9 @@ for (let i = 1; i <= 9; i++) {
   
   
 } 
+
+const button = document.getElementById("paiBotao");
+console.log(button);
+button.addEventListener('click', () => {
+  window.location.href = 'Combinacoes.html';
+})
